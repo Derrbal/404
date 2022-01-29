@@ -24,6 +24,12 @@
 	header{
 		height: 60px; 
 	}
+	main {
+		height: calc(100vh - 60px);
+	}
+	div.mainContent{
+  		height: calc(100vh - 60px);
+	}
 	@keyframes openPage {
 		0% {
 			top: -60px;
@@ -78,6 +84,12 @@
 	}
 	header{
 		height: 100px; 
+	}
+	main {
+		height: calc(100vh - 100px);
+	}
+	div.mainContent{
+  		height: calc(100vh - 100px);
 	}
 	@keyframes openPage {
 		0% {
