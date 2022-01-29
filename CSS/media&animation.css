@@ -1,0 +1,105 @@
+@keyframes openPage {
+	0% {
+		top: -35px;
+		opacity: 0;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes message {
+	0% {
+		right: -230px;
+		opacity: 0;
+	}
+	100% {
+		right: 0px;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 500px) , (min-width: 1600px){
+	header{
+		height: 60px; 
+	}
+	@keyframes openPage {
+		0% {
+			top: -60px;
+			opacity: 0;
+		}
+		100% {
+			top: 0px;
+			opacity: 1;
+		}
+	}
+	div.header {
+		padding: 10px 0px;
+	}
+	img.logo {
+		height: 40px;
+	}
+
+	#bell {
+ 		font-size: 25px;
+	}
+	label {
+		width: 40px;
+    	height: 40px;
+	}
+	div.menu {
+		top: 55px;
+    	padding: 10px;
+	}
+	div.name p {
+		font-size: 20px;
+	}
+	li a {
+		font-size: 25px;
+	}
+	img.notFound {
+		width: 400px;
+	}
+}
+
+@media (max-width: 400px) , (max-height: 450px){
+	img.notFound {
+		display: none;
+	}
+}
+
+@media (max-width: 280px){
+	#bell {
+ 		float: left;
+	}
+	label {
+		float: left;
+	}
+	header{
+		height: 100px; 
+	}
+	@keyframes openPage {
+		0% {
+			top: -100px;
+			opacity: 0;
+		}
+		100% {
+			top: 0px;
+			opacity: 1;
+		}
+	}
+	div.menu {
+		top: 98px;
+		left: 10%;
+	}
+	div.message {
+	width: 170px;
+	}
+}
+
+@media (min-width: 1200px){
+	img.notFound {
+		width: 800px;
+	}
+}

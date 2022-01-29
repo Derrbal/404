@@ -1,0 +1,99 @@
+body {
+	background-color: #EEEDE9;
+	overflow: hidden;
+}
+
+header {
+	background-color: white;
+	height: 45px;
+	position: relative;
+	animation-name: openPage;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+div.header {
+	font-family: sans-serif;
+	margin: 0% 10%;
+	padding: 5px 0px;
+	height: 45px;
+}
+
+img.logo {
+	float: left;
+	display: flex;
+	height: 35px;
+}
+
+#bell {
+	display: inline-block;
+	float: right;
+	opacity: 0.5;
+	transition: 0.2s;
+	margin: 7.5px 10px;
+ 	font-size: 20px;
+}
+
+#bell:hover  {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+div.menu, 
+input {
+	display: none;
+  	position: absolute;
+	right: 10%;
+	top: 43px;
+    background: white;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+}
+
+:checked ~ div.menu {
+  	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+}
+
+label {
+	display: flex;
+	cursor: pointer;
+	border-radius: 100px;
+	background-color: #FF8900;
+	float: right;
+	width: 35px;
+    height: 35px;
+    color: white;
+  	align-items: center;
+ 	justify-content: center;
+ 	opacity: 0.8;
+ 	transition: 0.2s
+}
+
+label:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+li {
+	padding: 10px;
+	transition: 0.2s;
+}
+
+li:hover {
+	background-color: #EEEDE9;
+	transition: 0.2s;
+}
+
+ul {
+	width: 100%;
+}
+
+div.name {
+	font-size: 12px;
+	border-bottom: solid;
+	margin-bottom: 5px;
+	padding-bottom: 5px; 	
+	color: gray;
+}

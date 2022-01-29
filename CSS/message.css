@@ -1,0 +1,37 @@
+div.messageBox {
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+div.message {
+	display: flex;
+	flex-direction: row;
+  	align-items: center;
+	padding: auto;
+	background-color: rgba(255, 185, 0, 0.7);
+	border-radius: 5px;
+	width: 230px;
+	margin: 5px;
+	padding: 5px;
+	color: white;
+	position: relative;
+	animation-name: message;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#error {
+	background-color: rgba(245, 39, 39, 0.7);
+}
+
+#success {
+	background-color: rgba(14, 244, 3, 0.7);
+}
+
+.message i {
+	margin: 0px 10px;
+}
