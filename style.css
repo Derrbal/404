@@ -1,0 +1,179 @@
+body {
+	background-color: #EEEDE9;
+}
+header {
+	background-color: white;
+	height: 45px;
+	position: relative;
+	animation-name: openPage;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+
+main {
+	height: calc(100vh - 45px);
+	margin: 0% 10%;
+}
+
+div.header {
+	margin: 0% 10%;
+	padding: 5px 0px;
+}
+
+img.logo {
+	float: left;
+	display: flex;
+	height: 35px;
+}
+
+/*div.avatar {
+	border-radius: 100px;
+	background-color: green;
+	float: right;
+	width: 35px;
+    height: 35px;
+    color: white;
+    display: flex;
+  	align-items: center;
+ 	justify-content: center;
+ 	opacity: 0.8;
+ 	transition: 0.2s
+}*/
+
+
+div.bell {
+	float: right;
+	display: flex;
+  	align-items: center;
+ 	justify-content: center;
+ 	margin: 0px 10px;
+ 	font-size: 20px;
+    height: 35px;
+}
+
+div.mainContent{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  	justify-content: center;
+  	height: calc(100vh - 45px);
+
+}
+
+div p.error {
+	display: block;
+	text-align: center;
+	font-family: sans-serif;	
+	font-size: 20px;
+}
+
+img.error {
+	width: 600px;
+	display: block;
+}
+
+
+#bell {
+	opacity: 0.5;
+	transition: 0.2s
+}
+#bell:hover  {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+label:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+
+@keyframes openPage {
+	0% {
+		top: -35px;
+		opacity: 0;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+
+input, ul { display: none;}
+
+label {
+	margin-top: 5px;
+	display: flex;
+	cursor: pointer;
+	border-radius: 100px;
+	background-color: #FF8900;
+	float: right;
+	width: 35px;
+    height: 35px;
+    color: white;
+  	align-items: center;
+ 	justify-content: center;
+ 	opacity: 0.8;
+ 	transition: 0.2s
+}
+
+:checked ~ ul {
+  	display: inline-block;
+  	position: absolute;
+	right: 10%;
+	top: 43px;
+    background: white;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px 20px 10px 10px;
+}
+
+li {
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+span {
+	color: gray;
+	display: block;
+	border: dashed black;
+	font-size: 30px;
+}
+
+div.messageBox {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+div.message {
+	display: flex;
+	flex-direction: row;
+  	align-items: center;
+	padding: auto;
+	background-color: rgba(255, 185, 0, 0.7);
+	border-radius: 5px;
+	height: 70px;
+	width: 230px;
+	margin: 5px;
+	padding: 5px;
+	color: white;
+}
+
+#error {
+	background-color: rgba(245, 39, 39, 0.7);
+}
+
+#success {
+	background-color: rgba(14, 244, 3, 0.7);
+}
+
+.message i{
+	margin: 0px 10px;
+}
